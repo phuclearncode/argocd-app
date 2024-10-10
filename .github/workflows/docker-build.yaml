@@ -22,6 +22,6 @@ jobs:
 
     - name: Build and Push Docker image
       run: |
-          docker build -t quyetjs/lab_argocd:${{ github.run_number }} -t quyetjs/lab_argocd:latest .
-          docker push quyetjs/lab_argocd:${{ github.run_number }}
-          docker push quyetjs/lab_argocd:latest
+          docker build -t phuclearndocker/gitops:${{ github.run_number }} -t phuclearndocker/gitops:latest .
+          docker push phuclearndocker/gitops:${{ github.run_number }}
+          docker push phuclearndocker/gitops:latest
