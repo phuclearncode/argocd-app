@@ -22,5 +22,5 @@ jobs:
 
     - name: Build and Push Docker image
       run: |
-          docker build -t phuclearndocker/gitops:0.2.${{ github.run_number }} .
-          docker push phuclearndocker/gitops:0.2.${{ github.run_number }}
+          docker build -t phuclearndocker/gitops:v0.2.${{ github.run_number }} .
+          docker push phuclearndocker/gitops:v0.2.${{ github.run_number }}
