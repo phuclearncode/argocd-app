@@ -24,4 +24,4 @@ jobs:
       run: |
           docker build -t phuclearndocker/gitops:${{ github.run_number }} -t phuclearndocker/gitops:0.2.${{ github.run_number }} .
           docker push phuclearndocker/gitops:${{ github.run_number }}
-          docker push phuclearndocker/gitops::0.2.${{ github.run_number }}
+          docker push phuclearndocker/gitops:0.2.${{ github.run_number }}
