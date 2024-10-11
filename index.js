@@ -4,6 +4,7 @@ const port = process.env.PORT || 3000;
 const server = http.createServer((req, res) => {
 const customHeader = process.env.CUSTOM_HEADER || 'Default Header Value';
 const msg = 'Fresher DevOps FHN.NGT!, Happy Coding\n'
+
   res.statusCode = 200;
 
   res.setHeader('X-Custom-Header', customHeader); // Set the custom header
